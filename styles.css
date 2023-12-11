@@ -1,0 +1,57 @@
+#chart {
+    height: 400px;
+    /* Set the height of the chart */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 0px 5px 0px 5px;
+    position: relative;
+    /* Add this to make the top-filler positioned relative to #chart */
+}
+
+.bar {
+    flex: 0 0 auto;
+    width: 3%;
+    /* Adjust the width of each bar */
+    background-color: blue;
+    color: white;
+    text-align: center;
+    transition: height 0.5s ease-in-out;
+    border: 1px solid #fff;
+    /* Add border to each bar */
+    border-bottom: none;
+    /* Remove bottom border to avoid double borders with dividers */
+}
+
+.divider {
+    flex: 0 0 auto;
+    width: 1px;
+    /* Set the width of the divider */
+    background-color: #ccc;
+    /* Set the color of the divider */
+}
+
+.top-filler {
+    width: 100%;
+    background-color: lightgray;
+    /* Set the background color for the top filler */
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    /* Send the top-filler to the background */
+}
+
+
+button {
+    margin-top: 10px;
+}
+
+#chart {
+    /* ... (existing styles) */
+    position: relative;
+    /* Add this to make the top-filler positioned relative to #chart */
+}
